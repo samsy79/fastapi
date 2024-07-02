@@ -1,8 +1,8 @@
     import { Redis } from '@upstash/redis'
 
     const redis = new Redis({
-        url: 'https://gusc1-together-buck-30612.upstash.io',
-        token: 'AXeUASQgYjU2NWU2OWItZDZlOC00N2IxLWI0OGUtOWZlYjcxMzNhYzU4NTllMmJjMmM1MGMyNGQyNjkwZmQ3YTJmYzA0YTc2MWQ=',
+        url: process.env(UPSTASH_URL),
+        token: process.env(UPSTASH_TOKEN),
     })
 
 
